@@ -39,5 +39,5 @@ npm run test
 * Property component that takes {mlsId, photosArray, price, bedrooms, bathsFull,
      bathsHalf, stories, saveProperty, listingDate, saved, id} as params
 * PropertyListings component that takes {fireStore} as props, and calls AJAX getAllListings and getSavedProperties from fireStore on componentDidMount
-* SavedListings component that takes {fireStore} as props, and calls AJAX getSavedProperties from fireStore on componentDidMount
+* SavedListings component that takes {fireStore} as props, and calls AJAX getSavedProperties from fireStore on componentDidMount, then passes mlsId and docId for each saved property to PropertyQuery component
 * PropertyQuery component that takes {mlsId, docId, deleteListing} as props, and call AJAX getListing(mlsId) on ComponentDidMount, then passes propertyInfo to Property component
