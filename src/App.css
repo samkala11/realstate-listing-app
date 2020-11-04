@@ -3,7 +3,7 @@
   background: rgb(235, 235, 227);
 }
 
-.Home {
+.Home, .error-page-title {
   text-align: center;
   font-size: 24px;
   margin-top: 14px;
