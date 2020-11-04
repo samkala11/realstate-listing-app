@@ -3,11 +3,11 @@
 This project was built using create-react-app js and firebase as baas.
 
 ## Functionalties
-User can check all Property listins
-User can save a property listing
-User can check saved properties in saved listings page
-User can unsave a property listing
-User can go to Home page
+* User can check all Property listins
+* User can save a property listing
+* User can check saved properties in saved listings page
+* User can unsave a property listing
+* User can go to Home page
 
 ## Installation
 
