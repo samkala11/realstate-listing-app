@@ -23,7 +23,7 @@ npm start
 npm run test
 
 
-## Dependecies
+## Dependencies
 * `react 17.0.1`
 * `firebase 8.0.0`
 * `material-ui library for UI styles`
@@ -34,7 +34,7 @@ npm run test
 
 
 
-## Design Decisions
+## Design
 * Property component that takes {mlsId, photosArray, price, bedrooms, bathsFull,
      bathsHalf, stories, saveProperty, listingDate, saved, id} as props
 * PropertyListings component that takes {fireStore} as props, and calls AJAX getAllListings and getSavedProperties from fireStore on componentDidMount
