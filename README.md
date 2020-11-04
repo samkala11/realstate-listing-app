@@ -23,12 +23,13 @@ npm run test
 
 
 ## Dependecies
-react 17.0.1
-firebase 8.0.0
-material-ui library for UI design
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
-    "@material-ui/lab": "^4.0.0-alpha.56",
+* react 17.0.1
+* firebase 8.0.0
+* material-ui library for UI design
+* `material-ui library for UI design`
+  * `@material-ui/core: ^4.11.0`
+  * `@material-ui/icons: ^4.9.1`
+  * `@material-ui/lab: ^4.0.0-alpha.56`
 jest for testing
 
 
