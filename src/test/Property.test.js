@@ -23,7 +23,7 @@ test('Renders Property page successfully', () => {
 });
 
 
-test('Shows price correctly', () => {
+test('Shows property info correctly', () => {
 
     render(<Property  
         price={937477}
@@ -38,7 +38,15 @@ test('Shows price correctly', () => {
 
     const listingPrice = screen.getByTestId('listing-price');
     expect(listingPrice).toHaveTextContent('$937,477');
-
+    
+    const bedroomsNumber = screen.getByTestId('bedrooms-number');
+    expect( bedroomsNumber).toHaveTextContent('3');
+    
+    const bathNumber = screen.getByTestId('bath-number');
+    expect( bathNumber).toHaveTextContent('6');
+    
+    const storiesNumber = screen.getByTestId('stories-number');
+    expect( storiesNumber).toHaveTextContent('2');
 
 });
 

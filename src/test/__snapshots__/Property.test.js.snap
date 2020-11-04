@@ -34,6 +34,7 @@ exports[`matches Property snapshot with given props 1`] = `
     </p>
     <p
       className="bedrooms-number"
+      data-testid="bedrooms-number"
     >
         
       3
@@ -43,6 +44,7 @@ exports[`matches Property snapshot with given props 1`] = `
     </p>
     <p
       className="bath-number"
+      data-testid="bath-number"
     >
        
       6
@@ -50,6 +52,7 @@ exports[`matches Property snapshot with given props 1`] = `
     </p>
     <p
       className="stories-number"
+      data-testid="stories-number"
     >
        
       2
