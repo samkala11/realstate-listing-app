@@ -4,7 +4,6 @@ import renderer from 'react-test-renderer';
 
 afterEach(cleanup);
 
-
 test('Renders Property page successfully', () => {
 
     render(<Property  
