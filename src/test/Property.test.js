@@ -47,6 +47,16 @@ test('Shows property info correctly', () => {
     const storiesNumber = screen.getByTestId('stories-number');
     expect( storiesNumber).toHaveTextContent('2');
 
+    const listingDetails = screen.getByTestId('listing-details');
+    expect(listingDetails).toBeInTheDocument();
+
+    
+    const dateListed = screen.getByTestId('date-listed');
+    expect( dateListed).toHaveTextContent('Date listed 10/25/1994');
+
+    const mlsId = screen.getByTestId('mls-id');
+    expect(mlsId).toHaveTextContent('mlsId 5990355');
+
 });
 
 

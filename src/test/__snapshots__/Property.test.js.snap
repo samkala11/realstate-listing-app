@@ -61,9 +61,11 @@ exports[`matches Property snapshot with given props 1`] = `
   </div>
   <div
     className="listing-details"
+    data-testid="listing-details"
   >
     <p
       className="date-listed"
+      data-testid="date-listed"
     >
        Date listed 
       <span
@@ -78,6 +80,7 @@ exports[`matches Property snapshot with given props 1`] = `
     </p>
     <p
       className="mls-id"
+      data-testid="mls-id"
     >
        mlsId 
       <span
