@@ -1,6 +1,6 @@
 # RealState Listings App
 
-This project was built using React js (17.0.1) and firebase (8.0.0) as baas.
+This project was built using create-react-app js and firebase as baas.
 
 ## Functionalties
 User can check all Property listins
@@ -13,10 +13,22 @@ User can go to Home page
 
 npm install
 
-## Run App
+## Run app
 
 npm start
 
 ## Run tests
 
 npm run test
+
+
+## Dependecies
+react 17.0.1
+firebase 8.0.0
+material-ui library for UI design
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+jest for testing
+
+
