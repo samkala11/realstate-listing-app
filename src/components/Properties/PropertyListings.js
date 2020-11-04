@@ -22,7 +22,12 @@ const PropertyListings = ({fireStore}) => {
     const [savedProperties, setSavedProperties] = useState([]);
     const [savedPropertiesIds, setSavedPropertiesIds] = useState([]);
 
+    const [showNoListingsMessage, setShowNoListingsMessage] = useState(false);
     //ComponentDidMount
+    useEffect(() => {
+        
+    })
+
     useEffect(() => {
         console.log('useEffect here')
         if (listings.length  === 0) {
@@ -34,7 +39,12 @@ const PropertyListings = ({fireStore}) => {
             })
         }
 
+        let timeId = setTimeout(() => setShowNoListingsMessage(true), 500);
         getSavedProperties();
+
+
+        return () => { clearTimeout(timeId) }
+
     }, [listings])
 
 
@@ -137,7 +147,7 @@ const PropertyListings = ({fireStore}) => {
 
     return (
         <div data-testid="property-listings-wrapper" className="property-listings">
-            {/* <h2>  </h2> */}
+           { showNoListingsMessage && listings.length === 0 && <div className="no-listings-message">  No listings  </div>} 
             <div className="listings-container">
             {/* { loading && listings.length === 0 && <div className="loading-container"> <CircularProgress/> </div>} */}
 
