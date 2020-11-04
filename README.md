@@ -10,7 +10,7 @@ This project was built using create-react-app js and firebase as BaaS.
 * User can go to Home, Property Listings and Saved Listings pages
 
 
-## Installation
+## Setup
 
 npm install
 
@@ -31,7 +31,6 @@ npm run test
   * `@material-ui/icons: ^4.9.1`
   * `@material-ui/lab: ^4.0.0-alpha.56`
 * `jest for testing`
-
 
 
 
