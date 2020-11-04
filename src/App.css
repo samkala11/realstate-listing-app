@@ -1,17 +1,20 @@
 .App, body {
   /* text-align: center; */
   background: rgb(235, 235, 227);
+  /* color: rgb(66, 64, 64); */
 }
 
 .Home, .error-page-title {
   text-align: center;
   font-size: 24px;
   margin-top: 14px;
+  color: rgb(66, 64, 64);
 }
 
 .no-saved-properties {
   text-align: center;
   font-size: 24px;
+  color: rgb(66, 64, 64);
   /* margin-top: 14px; */
 }
 
