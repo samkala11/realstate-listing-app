@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches Property snapshot with given props 1`] = `
+<div
+  className="property-listing"
+  data-testid="property-listing-container"
+>
+  <button
+    className="save-button"
+    id="save-button-id"
+    onClick={[Function]}
+  >
+    <svg
+      aria-hidden={true}
+      className="MuiSvgIcon-root"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+      />
+    </svg>
+  </button>
+  <div
+    className="listing-info"
+  >
+    <p
+      className="listing-price"
+      data-testid="listing-price"
+    >
+       $
+      937,477
+       
+    </p>
+    <p
+      className="bedrooms-number"
+    >
+        
+      3
+       
+      bds
+       | 
+    </p>
+    <p
+      className="bath-number"
+    >
+       
+      6
+       ba | 
+    </p>
+    <p
+      className="stories-number"
+    >
+       
+      2
+       stories 
+    </p>
+  </div>
+  <div
+    className="listing-details"
+  >
+    <p
+      className="date-listed"
+    >
+       Date listed 
+      <span
+        className="date-display"
+      >
+        10/25
+        /
+        1994
+         
+      </span>
+       
+    </p>
+    <p
+      className="mls-id"
+    >
+       mlsId 
+      <span
+        className="mls-id-display"
+      >
+         
+        5990355
+         
+      </span>
+       
+    </p>
+  </div>
+</div>
+`;

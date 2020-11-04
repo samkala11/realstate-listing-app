@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Property listins page matches snapshot 1`] = `
+<div
+  className="property-listings"
+  data-testid="property-listings-wrapper"
+>
+  <div
+    className="listings-container"
+  />
+</div>
+`;

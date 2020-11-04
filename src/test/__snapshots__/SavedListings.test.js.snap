@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches SavedListing snapshot with given props 1`] = `
+<div
+  className="saved-listings"
+>
+  <div
+    className="saved-listing-container"
+  />
+</div>
+`;

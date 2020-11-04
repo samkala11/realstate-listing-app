@@ -1,37 +1,35 @@
 import { render, screen, cleanup } from '@testing-library/react';
-import App from './App';
+import NavBar from '../components/NavBar/NavBar';
+import renderer from 'react-test-renderer';
 
 afterEach(cleanup);
 
-test('Renders home page', () => {
+test('Renders NavBar page successfully', () => {
 
-  render(<App />);
-  const linkElement = screen.getAllByText(/Home/i);
-  console.log(`link length ${linkElement.length}`);
-  expect(linkElement.length).toBe(2);
-  expect(linkElement[0]).toBeInTheDocument();
-
+    render(<NavBar />);
+    const navBarTitle = screen.getByTestId('nav-bar');
+    expect(navBarTitle).toBeInTheDocument();
+  
 });
 
-test('Navbar renders successfully and show 3 nav tabs', () => {
-    render(<App />);
+test('NavBar page show all 3 tabs successfully', () => {
 
-    const navbar = screen.getByTestId('nav-bar');
-    expect(navbar).toBeInTheDocument();
-
+    render(<NavBar />);
     const homeTab = screen.getByTestId('home-tab');
     expect(homeTab).toBeInTheDocument();
     expect(homeTab).toHaveTextContent('Home')
-
 
     const listingsTab = screen.getByTestId('listings-tab');
     expect(listingsTab).toBeInTheDocument();
     expect(listingsTab).toHaveTextContent('Property Listings')
 
-
     const savedListingsTab = screen.getByTestId('saved-listings-tab');
     expect(savedListingsTab).toBeInTheDocument();
     expect(savedListingsTab).toHaveTextContent('Saved Listings')
+  
+});
 
-
+test('NavBar page matches snapshot', () => {
+    const tree = renderer.create(<NavBar />).toJSON();
+    expect(tree).toMatchSnapshot();
 })

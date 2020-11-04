@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches PropertyQuery page snapshot with given props 1`] = `
+<div
+  data-testid="property-query-container"
+>
+  <span
+    className="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-pulse"
+    style={
+      Object {
+        "height": 280,
+        "width": 350,
+      }
+    }
+  />
+  <span
+    className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
+    style={
+      Object {
+        "height": undefined,
+        "width": undefined,
+      }
+    }
+  />
+  <span
+    className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
+    style={
+      Object {
+        "height": undefined,
+        "width": undefined,
+      }
+    }
+  />
+  <span
+    className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
+    style={
+      Object {
+        "height": undefined,
+        "width": undefined,
+      }
+    }
+  />
+</div>
+`;

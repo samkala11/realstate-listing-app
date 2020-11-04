@@ -1,5 +1,6 @@
-.App {
-  text-align: center;
+.App, body {
+  /* text-align: center; */
+  background: rgb(235, 235, 227);
 }
 
 .App-logo {
@@ -35,4 +36,207 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.property-listing {
+  margin-bottom: 40px;
+  /* border: rgb(204, 204, 198) 1px solid; */
+  border-radius: 4%;
+  background: rgb(235, 235, 227);
+}
+
+.property-listings , .saved-listing-container{
+  width: 90%;
+  margin-left: 5%;
+}
+
+.property-image {
+  width: 330px;
+  height: 260px;
+  position: relative;
+  border-radius: 4% 4% 0 0;
+}
+
+.listings-container, .saved-listing-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.listing-info {
+  display: flex;
+  margin-top: -42px;
+  z-index: 10;
+  width: 330px;
+  position: absolute;
+  color: rgb(226, 219, 219);
+  background-color: rgba(27, 26, 26, 0.4);
+}
+
+.listing-price {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  width: 148px;
+  margin-left: 10px;
+}
+
+.bedrooms-number, .bath-number, .stories-number, .mls-id, .date-listed {
+  font-size: 14px;
+  margin: 10px;
+  margin-right: 5px;
+}
+
+.bath-number {
+  margin-right: 6px;
+  margin-left: -4px;
+}
+
+.bath-number, .stories-number {
+  margin-left: 0px;
+}
+
+.save-button {
+  height: 18px;
+  width: 10px;
+}
+
+.mls-id, .date-listed {
+  margin: 0;
+  color: gray;
+  margin-left: 10px;
+}
+
+.listing-details {
+  margin-top: -22px;
+  /* display: flex; */
+  height: 70px;
+  background: rgb(235, 235, 227);
+  border-radius: 16%;
+  padding-top: 22px;
+}
+
+.mls-id {
+  margin-left: 10px;
+  position: relative;
+}
+
+#save-button-id {
+    margin-top: 10px;
+    z-index: 30;
+    margin-left: 9px;
+    cursor: pointer;
+    height: 22px;
+    width: 22px;
+    position: relative;
+    border: transparent;
+    background: transparent;
+    outline: none;
+    position: absolute;
+    color: rgb(206, 87, 66);
+}
+
+#save-button-id:active {
+  border: transparent;
+  background: transparent;
+  outline: none;
+}
+
+#favorite-icon {
+  margin: 0;
+  position: absolute;
+  margin-top: -10px;
+  margin-left: -12px;
+}
+
+#delete-button {
+  position: absolute;
+  z-index: 22;
+  margin-left: 274px;
+  margin-top: 7px;
+  background-color: rgba(27, 26, 26, 0.7);
+  width: 6px;
+  height: 20px;
+  font-size: 14px;
+  color: white;
+  border: none;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.loading-container {
+  z-index: 30;
+  /* height: 100vh; */
+  width: 100vw;
+  /* background: rgba(27, 26, 26, 0.1); */
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.date-display, .mls-id-display {
+  display: inline-block;
+  color: rgb(66, 64, 64);
+}
+
+.date-display {
+  margin-left: 31.5%;
+}
+
+.mls-id-display {
+  margin-left: 40%;
+  position: absolute;
+  right: 76px;
+}
+
+#property-container {
+  margin-bottom: 42px;
+  height: 334px;
+  border-radius: 4%;
+}
+
+#nav-bar-container {
+  background:  rgb(235, 235, 227);
+}
+
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .listing-price {
+    font-size: 18px;
+    width: 96px;
+    margin-left: 5px;
+    margin-top: 6px;
+  }
+
+  .bedrooms-number, .bath-number, .stories-number, .mls-id, .date-listed {
+    /* margin-left: 24px; */
+  }
+
+  .listing-info {
+    width: 278px;
+    margin-top: -44px;
+  }
+
+  #property-container {
+    height: 291px;
+  }
+
+  .property-image {
+    width: 278px;
+    height: 218px;
+  }
+
+  #save-button-id {
+    margin-top: 10px;
+    z-index: 30;
+  }
+
+  .mls-id-display {
+    right: 42px;
+  }
+
 }
