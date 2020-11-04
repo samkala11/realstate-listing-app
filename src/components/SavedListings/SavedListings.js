@@ -11,10 +11,16 @@ const SavedListings = ({fireStore}) => {
         currentUserPropertiesQuery = savedPropertiesRef.where("userId", "==", localStorage.getItem('userId'));
     }
     const [savedProperties, setSavedProperties] = useState([]);
+    const [showNoSavedProperties, setShowNoSavedProperties] = useState(false)
     window.savedPropertiesState = savedProperties;
 
     useEffect(() => {
         getSavedProperties();
+
+        let timeId = setTimeout(() => setShowNoSavedProperties(true), 500);
+
+        return () => { clearTimeout(timeId) }
+
     }, [])
 
     const deleteSavedListing = (a, b, id) => {
@@ -53,7 +59,7 @@ const SavedListings = ({fireStore}) => {
 
                 </div> 
             ))   :
-                <div className="no-saved-properties">No Saved Properties </div>
+                <div className="no-saved-properties"> { showNoSavedProperties && <span> No Saved Properties </span>} </div>
             
             }
             </div>
