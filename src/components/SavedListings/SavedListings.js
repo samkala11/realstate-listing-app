@@ -40,7 +40,7 @@ const SavedListings = ({fireStore}) => {
         <div className="saved-listings">
             <div className="saved-listing-container">
             
-            { savedProperties && savedProperties.map(savedProperty => (
+            { savedProperties.length > 0 ? savedProperties.map(savedProperty => (
                 <div key={savedProperty.mlsId}> 
                     {/* <Button  id="delete-button" onClick={() => {
                         deleteSavedListing(savedProperty.id)
@@ -51,8 +51,11 @@ const SavedListings = ({fireStore}) => {
                         deleteListing = {deleteSavedListing}
                     />
 
-                </div>
-            ))}
+                </div> 
+            ))   :
+                <div className="no-saved-properties">No Saved Properties </div>
+            
+            }
             </div>
 
         </div>

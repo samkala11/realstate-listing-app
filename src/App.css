@@ -9,6 +9,12 @@
   margin-top: 14px;
 }
 
+.no-saved-properties {
+  text-align: center;
+  font-size: 24px;
+  /* margin-top: 14px; */
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
