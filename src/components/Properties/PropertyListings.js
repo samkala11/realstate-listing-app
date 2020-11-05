@@ -33,11 +33,14 @@ const PropertyListings = ({fireStore}) => {
                 console.log(res);
                 setListings(res);       
             })
+            .catch(() => {
+                console.log('CAnnot get the listings');
+                setShowNoListingsMessage(true)
+
+            })
         }
 
-        let timeId = setTimeout(() => setShowNoListingsMessage(true), 500);
         getSavedProperties();
-        return () => { clearTimeout(timeId) }
 
     }, [listings])
 

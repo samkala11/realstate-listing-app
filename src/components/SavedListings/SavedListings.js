@@ -29,7 +29,8 @@ const SavedListings = ({fireStore}) => {
 
     const getSavedProperties = () => {
 
-        currentUserPropertiesQuery.get().then( snapshot => {
+        currentUserPropertiesQuery.get()
+        .then( snapshot => {
             const savedPropertiesArr = [];
             snapshot.docs.forEach( (doc, ind) => {
                 savedPropertiesArr.push(doc.data())
@@ -38,6 +39,10 @@ const SavedListings = ({fireStore}) => {
                 console.log(doc.id)
             })
             setSavedProperties(savedPropertiesArr)
+        })
+        .catch(() => {
+            console.log('CAnnot get saved listings');
+            setShowNoSavedProperties(true)
         })
     }
 
