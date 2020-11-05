@@ -41,7 +41,7 @@ const SavedListings = ({fireStore}) => {
             setSavedProperties(savedPropertiesArr)
         })
         .catch(() => {
-            console.log('CAnnot get saved listings');
+            console.log('cannot get saved listings');
             setShowNoSavedProperties(true)
         })
     }

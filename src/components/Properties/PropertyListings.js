@@ -34,7 +34,7 @@ const PropertyListings = ({fireStore}) => {
                 setListings(res);       
             })
             .catch(() => {
-                console.log('CAnnot get the listings');
+                console.log('cannot get listings');
                 setShowNoListingsMessage(true)
 
             })
